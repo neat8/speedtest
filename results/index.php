@@ -94,7 +94,7 @@ function drawImage($speedtest)
     $WIDTH = 400 * $SCALE;
     $HEIGHT = 229 * $SCALE;
     $im = imagecreatetruecolor($WIDTH, $HEIGHT);
-    $BACKGROUND_COLOR = imagecolorallocate($im, 255, 255, 255);
+    $BACKGROUND_COLOR = imagecolorallocate($im, 0, 0, 0);
 
     // configure fonts
     $FONT_LABEL = tryFont('OpenSans-Semibold');
@@ -119,13 +119,13 @@ function drawImage($speedtest)
     $FONT_WATERMARK_SIZE = 8 * $SCALE;
 
     // configure text colors
-    $TEXT_COLOR_LABEL = imagecolorallocate($im, 40, 40, 40);
-    $TEXT_COLOR_PING_METER = imagecolorallocate($im, 170, 96, 96);
-    $TEXT_COLOR_JIT_METER = imagecolorallocate($im, 170, 96, 96);
-    $TEXT_COLOR_DL_METER = imagecolorallocate($im, 96, 96, 170);
-    $TEXT_COLOR_UL_METER = imagecolorallocate($im, 96, 96, 96);
-    $TEXT_COLOR_MEASURE = imagecolorallocate($im, 40, 40, 40);
-    $TEXT_COLOR_ISP = imagecolorallocate($im, 40, 40, 40);
+    $TEXT_COLOR_LABEL = imagecolorallocate($im, 255, 255, 255);
+    $TEXT_COLOR_PING_METER = imagecolorallocate($im, 248, 19, 55);
+    $TEXT_COLOR_JIT_METER = imagecolorallocate($im, 248, 19, 55);
+    $TEXT_COLOR_DL_METER = imagecolorallocate($im, 0, 255, 33);
+    $TEXT_COLOR_UL_METER = imagecolorallocate($im, 255, 0, 0);
+    $TEXT_COLOR_MEASURE = imagecolorallocate($im, 255, 255, 255);
+    $TEXT_COLOR_ISP = imagecolorallocate($im, 255, 255, 255);
     $SEPARATOR_COLOR = imagecolorallocate($im, 192, 192, 192);
     $TEXT_COLOR_TIMESTAMP = imagecolorallocate($im, 160, 160, 160);
     $TEXT_COLOR_WATERMARK = imagecolorallocate($im, 160, 160, 160);
@@ -168,7 +168,7 @@ function drawImage($speedtest)
     $JIT_TEXT = 'Jitter';
     $DL_TEXT = 'Download';
     $UL_TEXT = 'Upload';
-    $WATERMARK_TEXT = 'LibreSpeed';
+    $WATERMARK_TEXT = 'neat8 speedtest';
 
     // create text boxes for each part of the image
     $mbpsBbox = imageftbbox($FONT_MEASURE_SIZE_BIG, 0, $FONT_MEASURE, $MBPS_TEXT);
