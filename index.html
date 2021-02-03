@@ -12,8 +12,8 @@ var s=new Speedtest(); //create speedtest object
 s.setParameter("telemetry_level","basic"); //enable telemetry
 
 var meterBk=/Trident.*rv:(\d+\.\d+)/i.test(navigator.userAgent)?"#EAEAEA":"#80808040";
-var dlColor="#6060AA",
-	ulColor="#616161";
+var dlColor="#00FF21",
+	ulColor="#F81337";
 var progColor=meterBk;
 
 //CODE FOR GAUGES
@@ -250,12 +250,13 @@ function initUI(){
         overflow-y:auto;
         width:auto;
         height:auto;
-        box-shadow:0 0 3em 1em #000000;
+        box-shadow:0 0 3em 1em #888;
         z-index:999999;
         text-align:left;
-        background-color:#FFFFFF;
+        background-color:#111;
         padding:1em;
 	}
+	a {color:#f81337}
 	a.privacy{
         text-align:center;
         font-size:0.8em;
@@ -275,21 +276,21 @@ function initUI(){
 		}
 	}
 </style>
-<title>neat8 Speedtest</title>
+<title>neat8 speedtest</title>
 </head>
 <body>
-<h1>neat8 Speedtest</h1>
+<h1>neat8 speedtest</h1>
 <div id="testWrapper">
 	<div id="test">
 		<div class="testGroup">
 			<div class="testArea2">
 				<div class="testName">Ping</div>
-				<div id="pingText" class="meterText" style="color:#AA6060"></div>
+				<div id="pingText" class="meterText" style="color:#f81337"></div>
 				<div class="unit">ms</div>
 			</div>
 			<div class="testArea2">
 				<div class="testName">Jitter</div>
-				<div id="jitText" class="meterText" style="color:#AA6060"></div>
+				<div id="jitText" class="meterText" style="color:#F81337"></div>
 				<div class="unit">ms</div>
 			</div>
 		</div>

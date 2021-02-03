@@ -123,7 +123,7 @@ function drawImage($speedtest)
     $TEXT_COLOR_PING_METER = imagecolorallocate($im, 248, 19, 55);
     $TEXT_COLOR_JIT_METER = imagecolorallocate($im, 248, 19, 55);
     $TEXT_COLOR_DL_METER = imagecolorallocate($im, 0, 255, 33);
-    $TEXT_COLOR_UL_METER = imagecolorallocate($im, 255, 0, 0);
+    $TEXT_COLOR_UL_METER = imagecolorallocate($im, 248, 19, 55);
     $TEXT_COLOR_MEASURE = imagecolorallocate($im, 255, 255, 255);
     $TEXT_COLOR_ISP = imagecolorallocate($im, 255, 255, 255);
     $SEPARATOR_COLOR = imagecolorallocate($im, 192, 192, 192);
