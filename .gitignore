@@ -1,2 +1,4 @@
 results/idObfuscation_salt.php
 backend/getIP_serverLocation.php
+results/telemetry_settings.php
+backend/getIP_ipInfo_apikey.php
