@@ -28,8 +28,9 @@ Works with mobile versions too.
 
 ## Server requirements
 * A reasonably fast web server with Apache 2 (nginx, IIS also supported)
-* PHP 5.4 (other backends also available)
+* PHP 5.4 (other backends also available-supported up to currently latest PHP 8)
 * MySQL database to store test results (optional, PostgreSQL and SQLite also supported)
+* PHP-GD module to render image (used for sharing), and Database module depending on which you're using
 * A fast! internet connection
 
 ## Installation videos
